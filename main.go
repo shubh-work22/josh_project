@@ -22,7 +22,7 @@ func Status(w http.ResponseWriter, r *http.Request) {
 
 func goStatus() {
 	for {
-		time.Sleep(5 * time.Second)
+		time.Sleep(60 * time.Second)
 		var wg sync.WaitGroup
 
 		for key := range mp {
